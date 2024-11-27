@@ -1,0 +1,21 @@
+cd mygameproject
+py manage.py shell
+from task1.models import Buyer, Game
+Buyer.objects.all()
+Buyer.objects.create(name='Al', balance=2100.00, age=20)
+Buyer.objects.create(name='Emma17', balance=0.15, age=16)
+Buyer.objects.create(name='Loko', balance=300.00, age=40)
+Game.objects.create(title='Baldur's Gate 3', cost=2000, size=100, description='RPG', age_limited=True)
+Game.objects.create(title='Persona 5', cost=2000, size=100, description='Legend', age_limited=True)
+Game.objects.create(title='Space Marine 2', cost=1500, size=75, description='For the Emperor', age_limited=False)
+Buyer.objects.count()
+Game.objects.count()
+game1.buyer.add(buyer3)
+game2.buyer.add(buyer3)
+game3.buyer.add(buyer3)
+game1.buyer.add(buyer1)
+game3.buyer.add(buyer1)
+game3.buyer.add(buyer2)
+game1.buyer.set([buyer1, buyer3])
+game2.buyer.set([buyer3])
+game3.buyer.set([buyer1, buyer2, buyer3])
