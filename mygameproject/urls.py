@@ -24,18 +24,18 @@ from task1.views import films, cinemas, tickets, sign_up_by_html, sign_up_by_dja
 
 
 
+# urlpatterns = [
+#    path('admin/', admin.site.urls),
+#    path('', films),
+#    path('up_html/', sign_up_by_html),
+#    path('up_django/', sign_up_by_django),
+#    path('main/', films),
+#    path('cinema/', cinemas),
+#    path('ticket/', tickets),
+#]
+
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', films),
-    path('up_html/', sign_up_by_html),
-    path('up_django/', sign_up_by_django),
-    path('main/', films),
-    path('cinema/', cinemas),
-    path('ticket/', tickets),
+    path('', post_list),
+    path('view/', post_list_view),
 ]
-
-#urlpatterns = [
-#    path('admin/', admin.site.urls),
-#    path('', post_list),
-#    path('view/', post_list_view),
-#]
